@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndigoDelo - Subscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Age Verification -->
+    <div id="age-verification">
+        <div class="age-overlay">
+            <h1>Welcome to IndigoDelo</h1>
+            <p>Are you 21 years or older?</p>
+            <button onclick="verifyAge(true)">Yes</button>
+            <button onclick="verifyAge(false)">No</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="logo1.webp" alt="IndigoDelo Logo" class="logo">
+            <h1>Your Curated Cannabis Collective</h1>
+            <p>Choose a subscription box tailored to your style.</p>
+        </section>
+
+        <!-- Boxes Section -->
+        <section id="boxes">
+            <h2>Choose Your Box</h2>
+            <div class="box" onclick="selectBox('Starter Box')">
+                <h3>Starter Box</h3>
+                <p><strong>$30</strong></p>
+                <p>1-2g flower, 1g concentrate, rolling papers, grinder, small tray.</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="box" onclick="selectBox('Essentials Box')">
+                <h3>Essentials Box</h3>
+                <p><strong>$50</strong></p>
+                <p>3.5g flower, 2g concentrate, rolling tray, grinder, pre-rolled cones.</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="box" onclick="selectBox('Elevated Box')">
+                <h3>Elevated Box</h3>
+                <p><strong>$75</strong></p>
+                <p>7g flower, 3g concentrate, pre-rolls, larger tray, smell-proof bag.</p>
+                <button>Subscribe</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
