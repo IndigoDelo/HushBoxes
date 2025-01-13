@@ -1,0 +1,40 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Subscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="customization">
+        <h1>Customize Your Box</h1>
+        <form id="customization-form" onsubmit="handleCustomization(event)">
+            <h2>Choose a Theme</h2>
+            <select id="theme" required>
+                <option value="Anime">Anime</option>
+                <option value="Spooky">Spooky</option>
+                <option value="420 Vibes">420 Vibes</option>
+            </select>
+
+            <h2>Choose a Strain</h2>
+            <select id="strain" required>
+                <option value="Indica">Indica</option>
+                <option value="Sativa">Sativa</option>
+                <option value="Hybrid">Hybrid</option>
+            </select>
+
+            <h2>Add-Ons</h2>
+            <input type="checkbox" id="edibles" name="extras" value="Edibles"> Edibles<br>
+            <input type="checkbox" id="glass" name="extras" value="Premium Glass"> Premium Glass<br>
+            <br>
+            <button type="submit">Complete Subscription</button>
+        </form>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
